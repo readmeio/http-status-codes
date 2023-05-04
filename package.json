@@ -16,10 +16,32 @@
     "url": "https://github.com/readmeio/http-status-codes.git"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@readme/eslint-config": "^8.5.1",
+    "@types/jest": "^29.5.1",
     "eslint": "^8.11.0",
     "jest": "^27.5.1",
-    "prettier": "^2.6.0"
+    "prettier": "^2.6.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
   },
-  "prettier": "@readme/eslint-config/prettier"
+  "prettier": "@readme/eslint-config/prettier",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "body-max-line-length": [
+        0,
+        "always",
+        "Infinity"
+      ],
+      "footer-max-line-length": [
+        0,
+        "always",
+        "Infinity"
+      ]
+    }
+  }
 }
