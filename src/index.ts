@@ -133,7 +133,7 @@ function isStatusCodeSuccessful(code) {
   }
 }
 
-module.exports = {
+export {
   codes,
   getStatusCode,
   getStatusCodeMessage,

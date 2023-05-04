@@ -1,4 +1,4 @@
-const { codes, getStatusCode, getStatusCodeMessage, isStatusCodeSuccessful, isStatusCodeValid } = require('../src');
+import {codes, getStatusCode, getStatusCodeMessage, isStatusCodeSuccessful, isStatusCodeValid} from '../src';
 
 test('assure that every code is properly defined', () => {
   expect.hasAssertions();
