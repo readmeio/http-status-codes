@@ -1,11 +1,6 @@
-import {
-  codes,
-  getStatusCode,
-  getStatusCodeMessage,
-  HttpStatusCode,
-  isStatusCodeSuccessful,
-  isStatusCodeValid,
-} from '../src';
+import type { HttpStatusCode } from '../src';
+
+import { codes, getStatusCode, getStatusCodeMessage, isStatusCodeSuccessful, isStatusCodeValid } from '../src';
 
 test('assure that every code is properly defined', () => {
   expect.hasAssertions();
