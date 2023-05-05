@@ -2,7 +2,6 @@
   "compilerOptions": {
     "baseUrl": "./src/",
     "declaration": true,
-    "esModuleInterop": true,
     "noImplicitAny": true,
     "outDir": "./dist",
     "skipLibCheck": true,
