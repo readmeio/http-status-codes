@@ -2,7 +2,7 @@
   "name": "@readme/http-status-codes",
   "description": "Utility to lookup HTTP status codes",
   "version": "7.2.0",
-  "main": "dist/src/index.d.ts",
+  "main": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "lint": "eslint . --ext .js,.ts",
