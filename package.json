@@ -10,7 +10,8 @@
     "prebuild": "rm -rf dist",
     "prepack": "npm run build",
     "pretest": "npm run lint && npm run prettier",
-    "prettier": "prettier --check --write \"./**/**.{js,ts,md,json}\"",
+    "prettier": "prettier --check .",
+    "prettier:write": "prettier --check --write .",
     "test": "jest --coverage"
   },
   "author": "Jon Ursenbach <jon@ursenba.ch>",
