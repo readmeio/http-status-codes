@@ -4,9 +4,10 @@
   "version": "7.2.0",
   "main": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "tsc",
     "lint": "eslint . --ext .js,.ts",
-    "prepare": "npm run build",
+    "prebuild": "rm -rf dist",
+    "prepack": "npm run build",
     "pretest": "npm run lint && npm run prettier",
     "prettier": "prettier --check --write \"./**/**.{js,ts,md,json}\"",
     "test": "jest --coverage"
